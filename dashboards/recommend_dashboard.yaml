@@ -1,0 +1,42 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+# This file was generated using AI.
+
+title: Metrics for Recommendations
+table: recommend
+measures:
+  - name: average_recommend_slots
+    label: Average Recommend Slots
+    expression: AVG(recommendSlots)
+    description: Average number of recommend slots for projects
+    format_preset: humanize
+    valid_percent_of_total: false
+  - name: total_projects
+    label: Total Projects
+    expression: COUNT(projectID)
+    description: Total number of projects
+    format_preset: humanize
+    valid_percent_of_total: false
+  - name: min_recommend_slots
+    label: Minimum Recommend Slots
+    expression: MIN(recommendSlots)
+    description: Minimum number of recommend slots for a project
+    format_preset: humanize
+    valid_percent_of_total: false
+  - name: max_recommend_slots
+    label: Maximum Recommend Slots
+    expression: MAX(recommendSlots)
+    description: Maximum number of recommend slots for a project
+    format_preset: humanize
+    valid_percent_of_total: false
+available_time_zones:
+  - America/Los_Angeles
+  - America/Chicago
+  - America/New_York
+  - Europe/London
+  - Europe/Paris
+  - Asia/Jerusalem
+  - Europe/Moscow
+  - Asia/Kolkata
+  - Asia/Shanghai
+  - Asia/Tokyo
+  - Australia/Sydney

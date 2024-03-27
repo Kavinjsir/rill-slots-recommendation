@@ -1,0 +1,8 @@
+compiler: rill-beta
+
+title: "Demo"
+
+prod:
+  sources:
+    refresh:
+      cron: '* * * * *'

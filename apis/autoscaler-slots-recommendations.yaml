@@ -1,0 +1,8 @@
+kind: api
+sql: |
+  SELECT
+    projectID AS project_id,
+    CURRENT_TIMESTAMP AS updated_on,
+    recommendSlots AS slots,
+  FROM
+    recommend_model
